@@ -1,0 +1,91 @@
+<!DOCTYPE htm>
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="survey-form.css"/>
+</head>
+<body>
+<header>
+    <h1 id="title">Enzo Survey Form</h1>
+    <p id="description">Its my first survey form</p>
+</header>
+<form id="survey-form">
+    <div>
+        <label id="name-label" >Name<input type="text" id="name" class="form-control" placeholder="Enter your name "required></label>
+        
+        
+        
+    </div>
+    <div>
+        <label id="email-label" >Email<input type="email" id="email" class="form-control"  placeholder="Enter your email" required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" ></label>
+        
+    </div>
+    <div>
+        <label id="number-label">Age(optional)<input type="number" id="number" placeholder="Age "required
+            maxlength="2" min="10" max="99" class="form-control"></label>
+        
+        </div>
+        <div>
+           <p> What console do you usually play video games on?</p>
+           <select id="dropdown" name="console-list" required class="form-control">
+            <option disabled selected value>Select a console</option>
+            <option value="xbox">Xbox</option>
+            <option value="playstation">Playstation</option>
+            <option value="nintendo">Nintendo</option>
+            <option value="pc">PC</option>
+        </select>
+        </div>
+        <div>
+            <p>How many days a week do you play?</p>
+            <label>
+                <input value="1-3 days" type="radio" name="days" class="inline"  >1-3 days
+            </label>
+            </div>
+            <label>
+                <input value="3-5 days" type="radio" name="days" class="inline"  >3-5 days
+            </label>
+        </div>
+        <div>
+            <label>
+                <input value="5-7 days" type="radio" name="days" class="inline" >5-7 days
+            </label>
+        </div>
+        <div>
+            <p>What kind of games do you like?</p>
+           <div> <label>
+                <input name="prefer" value="Shooter" type="checkbox" class="input-checkbox">Shooter
+            </label>
+            </div>
+            <div>
+            <label>
+                <input name="prefer" value="RPG" type="checkbox" class="input-checkbox">RPG
+            </label>
+            </div>
+            <div>
+            <label>
+                <input name="prefer" value="survival-horror" type="checkbox" class="input-checkbox">Surival Horror
+            </label>
+            </div>
+            <div>
+            <label>
+                <input name="prefer" value="fighting" type="checkbox" class="input-checkbox">Fighting
+            </label>
+            </div>
+            <div>
+            <label>
+                <input name="prefer" value="platformer" type="checkbox" class="input-checkbox">Platformer
+            </label>
+            </div>
+        </div>
+        <div>
+            <p>Any comments or suggestions?</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment..."></textarea>
+            </div>
+            <div>
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+
+</form>
+</body>
+</html>
